@@ -98,8 +98,7 @@ class StaggeredGrid extends MultiChildRenderObjectWidget {
       ..mainAxisSpacing = mainAxisSpacing
       ..crossAxisSpacing = crossAxisSpacing
       ..axisDirection = axisDirection ??
-          Scrollable.of(context)?.axisDirection ??
-          AxisDirection.down
+          Scrollable.of(context).axisDirection
       ..textDirection = Directionality.of(context);
   }
 }
